@@ -1,0 +1,63 @@
+body{
+	margin:0px;
+	/*background: */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /*background: #f7f7f7;*/
+}
+.nav-bar{
+	background:#39424e;
+	/*padding: 10px;*/
+    border-radius: 0px;
+    border-color: #39424e;
+     /*color:#b7c9cc;*/
+    /*border-color:none;*/
+;
+}
+#title-css{
+	/*padding: 10px;*/
+	color: #4CAF50;
+    font-family: "Varela Round", Arial, sans-serif;
+    font-weight: 400;
+    font-size:18px;
+    display: inline-block;
+}
+#signup{
+	padding: 10px;
+	color:#555;
+    font-family: "Varela Round", Arial, sans-serif;
+    font-weight: 400;
+    font-size:17px;
+    float: right;
+}
+.title-span{
+	color:#b7c9cc;
+}
+.title-span:hover{
+	color:#4CAF50;
+}
+/* unvisited link */
+a:link {
+    text-decoration: none;
+}
+
+
+.myColor
+{
+    /*border-color: #39424e;*/
+    color: #39424e;
+}
+/* visited link */
+
+
+/* mouse over link */
+
+
+@media screen and (max-width: 750px) {
+  /*.box ul not(a)(first-child) {display: none;}*/
+  #signup{
+    float: none;
+    /*display: block;*/
+  }
+}

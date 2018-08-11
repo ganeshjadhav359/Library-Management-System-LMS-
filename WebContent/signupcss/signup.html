@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="container.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse nav-bar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a href="../frontPage/index.html" class="navbar-brand" id="title-css"><span class="title-span">Libray Management </span> System</a>
+        <!-- <a class="navbar-brand" id="" href="#">WebSiteName</a> -->
+    </div>
+    <div class="collapse navbar-collapse nav-bar" style="border-color: #39424e;" id="myNavbar">
+      <!-- <ul class="nav navbar-nav"> -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../login/login.html"><span class="glyphicon "></span> Log In</a></li>
+        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+      
+  <div class="limiter">
+    <div class="container-login100">
+      <div class="wrap-login100">
+        <form class="login100-form validate-form p-l-55 p-r-55 p-t-178">
+          <span class="login100-form-title">
+            Sign Up
+          </span>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate="Please enter username">
+            <input class="input100" type="text" name="username" placeholder="Username">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-16" data-validate = "Please enter password">
+            <input class="input100" type="password" name="pass" placeholder="Password">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input">
+       <input class="input100" type="password" name="pass" placeholder="Confirm Password">
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="container-login100-form-btn m-t-16">
+            <button class="login100-form-btn">
+              Sign Up
+            </button>
+          </div>
+
+          <div class="flex-col-c p-t-30 p-b-40">
+            <span class="txt1 p-b-9">
+              Already have an account?
+            </span>
+
+            <a href="../login/login.html" class="txt3">
+              Log In now
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

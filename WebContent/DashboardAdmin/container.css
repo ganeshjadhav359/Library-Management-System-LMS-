@@ -1,0 +1,59 @@
+*{
+  margin:0px;
+  /*background: #f7f7f7;*/
+}
+.container
+{
+  /*width:100%;*/
+    background: #f7f7f7;
+margin-top: 40px;
+}
+.myh2
+{
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+.inner
+{
+  width: 500px;
+  /*height: 30px;*/
+  margin-left: auto;
+  display: flex;
+  margin-right: auto;
+}
+.boxes
+{
+  margin:2%;
+  background: #fff;
+  width:46%; 
+  /*height:70px;*/
+  display:block;
+}
+img
+{
+  margin:10px auto;
+  display: block;
+  height: 30px;
+}
+.fontAwesome
+{
+   color: #337ab7;
+    font-size: 40px;
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    padding:10px 0px;
+}
+@media screen and (max-width: 700px) {
+    .inner{
+        width: 94%;
+        /*margin-top: 0;*/
+        margin: 0px 3%;
+        display: block;
+    }
+    .boxes
+    {
+      width: 100%;
+    }
+}

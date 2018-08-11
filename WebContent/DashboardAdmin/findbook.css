@@ -1,0 +1,93 @@
+#book{
+	display: none;
+}
+#user{
+	display: none;
+}
+.myh2
+{
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+.radio
+{
+	text-align: center;
+	display: flex;
+	margin: 0px;
+	position: relative;
+}
+
+.radioLeft{
+	margin: 0px !important;
+	margin-left: auto !important;
+	margin-right:10px !important;
+	position: relative !important;
+
+}
+.radioRight
+{
+	margin: 0px !important;
+    margin-left: 10px !important;
+	margin-right: auto !important;
+	position: relative !important;
+}
+input[type="radio"]
+{
+	height: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+.searchBox
+{
+	width: 500px;
+	margin: 20px auto; 
+}
+.searchBox input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 73%;
+  margin-left: 5%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+.searchBox button {
+  float: left;
+  width: 17%;
+  margin-right: 5%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+.searchBox button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+.searchBox::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .searchBox
+    {
+      width: 100%;
+      /*margin-left: 3%;*/
+      /*margin-right: 3%;*/
+    }
+}

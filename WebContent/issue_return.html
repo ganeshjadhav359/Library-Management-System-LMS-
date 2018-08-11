@@ -1,0 +1,111 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="issue_return_book/navbar.css">
+   
+    <link rel="stylesheet" href="issue_return_book/container.css">
+    <link rel="stylesheet" href="issue_return_book/findbook.css">
+    <!-- <link rel="stylesheet" href="table.css"> -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- <link rel="stylesheet" href="Dashboard/responsive.css" media="screen and (max-width: 900px)"> -->
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --> 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+    
+
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-inverse nav-bar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a href="#"class="navbar-brand" id="title-css"><span class="title-span">Libray Management </span> System</a>
+          <!-- <a class="navbar-brand" id="" href="#">WebSiteName</a> -->
+      </div>
+      <div class="collapse navbar-collapse nav-bar" style="border-color: #39424e;" id="myNavbar">
+        <!-- <ul class="nav navbar-nav"> -->
+          <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">
+          
+        <span class="glyphicon glyphicon-user"></span>  
+          Admin
+        <span class="glyphicon glyphicon-menu-down"></span>  
+        <!-- < class="fa fa-caret-down"></i> -->
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <!-- <a href="#">Dashboard</a> -->
+        <!-- <a href="#">Add Book</a> -->
+        <!-- <a href="#">Available Books</a> -->
+        <!-- <a href="#">Issued Books</a> -->
+        <!-- <a href="#">Issue/Return Book</a> -->
+        <!-- <a href="#">Log Out</a> -->
+         <a href="../Dashboard/Dashboard.html">Dashboard</a>
+        <a href="../addbook/addbook.html">Add Book</a>
+            <!-- <a href="#">Add Book</a> -->
+        <a href="../AvailableBooks/availablebooks.html">Available Books</a>
+        <a href="../IssuedBooks/issuedbooks.html">Issued Books</a>
+        <!-- <a href="../issue_return_book/issue_return.html">Issue/Return Book</a> -->
+        <a href="../../frontPage/index.html">Log Out</a>
+      </div>
+    </div> 
+  </div>
+      </div>
+    </div>
+  </nav>
+     
+  <form name="book"> 
+	  <div id="book" class="container">
+	     
+	      <div class="radio">
+	        <input type="radio" id="Bname" class="radioLeft" name="radio" value="name"> <h4>Issue</h4><br>
+	        <span style="margin-right: auto; display: flex;"><input type="radio" id="Bnumber" class="radioRight" name="radio" value="number"><h4 style="margin-left: 10px;">Return<br></h4></span>
+	        <!-- <input type="radio" name="gender" value="other"> Other -->
+	      </div>
+	      <div>
+	          <h4>Enter ISBN Number</h4>
+	          <input type="text" name="isbnNumber">
+	          <h4>UserId</h4>
+	          <input type="text" name="isbnNumber">
+	          <div>
+	              <button type="submit" value="submit" onclick="SearchBook()">submit</button>
+	          </div>
+	      </div>
+	</div>
+</form>
+
+  <script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+
+// toggle the dropdown  
+  function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      var myDropdown = document.getElementById("myDropdown");
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+    }
+  }
+  </script>
+
+  </body>
+</html>
